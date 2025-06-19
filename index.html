@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tabela de Fraquezas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Weakness Table - Night Lords</h1>
+
+    <table id="weaknessTable">
+      <thead>
+        <tr>
+          <th rowspan="2">Expedition</th>
+          <th rowspan="2">Night Lord</th>
+          <th rowspan="2">Weakness</th>
+          <th>Standard</th>
+          <th>Slash</th>
+          <th>Strike</th>
+          <th>Pierce</th>
+          <th>Magic</th>
+          <th>Fire</th>
+          <th>Lightning</th>
+          <th>Holy</th>
+          <th>Poison</th>
+          <th>Rot</th>
+          <th>Bleed</th>
+          <th>Frostbite</th>
+          <th>Sleep</th>
+          <th>Madness</th>
+        </tr>
+        <tr>
+          <th><img src="icons/standard.png"></th>
+          <th><img src="icons/slash.png"></th>
+          <th><img src="icons/strike.png"></th>
+          <th><img src="icons/pierce.png"></th>
+          <th><img src="icons/magic.png"></th>
+          <th><img src="icons/fire.png"></th>
+          <th><img src="icons/lightning.png"></th>
+          <th><img src="icons/holy.png"></th>
+          <th><img src="icons/poison.png"></th>
+          <th><img src="icons/rot.png"></th>
+          <th><img src="icons/bleed.png"></th>
+          <th><img src="icons/frostbite.png"></th>
+          <th><img src="icons/sleep.png"></th>
+          <th><img src="icons/madness.png"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="expedition-name">Tricephalos</td>
+          <td class="boss-name">Gladius</td>
+          <td class="main-weakness"><img src=""></td>
+          <td class="standard">-</td>
+          <td class="slash" >-</td>
+          <td class="strike">-</td>
+          <td class="pierce">+10%</td>
+          <td class="magic">-50%</td>
+          <td class="fire">-</td>
+          <td class="lightning">+35%</td>
+          <td class="holy">+35%</td>
+        </tr>
+
+        <!-- Adicione mais linhas conforme necessário -->
+      </tbody>
+    </table>
+
+    <script>
+      const rows = document.querySelectorAll("#weaknessTable tbody tr");
+
+      rows.forEach((row) => {
+        row.addEventListener("click", () => {
+          // Remove estilos anteriores
+          rows.forEach((r) => {
+            r.classList.remove("highlight");
+            r.classList.remove("dimmed");
+          });
+
+          // Aplica highlight na linha clicada e dimmed nas outras
+          row.classList.add("highlight");
+          rows.forEach((r) => {
+            if (r !== row) {
+              r.classList.add("dimmed");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
