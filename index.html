@@ -66,7 +66,7 @@
           <td class="sleep green awsome">154</td>
           <td class="madness terrible">Immune</td>
         </tr>
-        
+
         <tr>
           <td class="expedition-name">Gaping Jaw</td>
           <td class="boss-name">Adel</td>
@@ -87,10 +87,71 @@
           <td class="madness terrible">Immune</td>
         </tr>
 
+        <!-- Sentient Pest -->
+        <tr data-group="sentient-pest">
+          <td class="expedition-name" rowspan="2">Sentient Pest</td>
+          <td class="boss-name">Moth</td>
+          <td class="main-weakness"><img src="icons/fire.png" /></td>
+          <td class="standard good">+15%</td>
+          <td class="slash good">+25%</td>
+          <td class="strike good">+15%</td>
+          <td class="pierce good">+25%</td>
+          <td class="magic terrible">-50%</td>
+          <td class="fire awsome">+40%</td>
+          <td class="lightning bad">-10%</td>
+          <td class="holy bad">-10%</td>
+          <td class="poison">541</td>
+          <td class="rot awsome">154</td>
+          <td class="bleed awsome">154</td>
+          <td class="frostbite awsome">154</td>
+          <td class="sleep">541</td>
+          <td class="madness terrible">Immune</td>
+        </tr>
+
+        <tr data-group="sentient-pest">
+          <!-- <td class="expedition-name"></td> -->
+          <td class="boss-name">Scorpion</td>
+          <td class="main-weakness"><img src="icons/fire.png" /></td>
+          <td class="standard bad">-10%</td>
+          <td class="slash terrible">-20%</td>
+          <td class="strike good">+20%</td>
+          <td class="pierce good">+10%</td>
+          <td class="magic bad">-10%</td>
+          <td class="fire awsome">+35%</td>
+          <td class="lightning bad">-10%</td>
+          <td class="holy bad">-10%</td>
+          <td class="poison good">252</td>
+          <td class="rot awsome">154</td>
+          <td class="bleed awsome">154</td>
+          <td class="frostbite awsome">154</td>
+          <td class="sleep awsome">154</td>
+          <td class="madness terrible">Immune</td>
+        </tr>
+
+        <tr>
+          <td class="expedition-name">Augur</td>
+          <td class="boss-name">Maris</td>
+          <td class="main-weakness"><img src="icons/lightning.png" /></td>
+          <td class="standard"></td>
+          <td class="slash good">+15%</td>
+          <td class="strike bad">-20%</td>
+          <td class="pierce bad">-20%</td>
+          <td class="magic bad">-20%</td>
+          <td class="fire terrible">-50%</td>
+          <td class="lightning awsome">+40%</td>
+          <td class="holy bad">-15%</td>
+          <td class="poison terrible">Immune</td>
+          <td class="rot">252</td>
+          <td class="bleed terrible">Immune</td>
+          <td class="frostbite">252</td>
+          <td class="sleep terrible">Immune</td>
+          <td class="madness terrible">Immune</td>
+        </tr>
+        
         <tr>
           <td class="expedition-name"></td>
           <td class="boss-name"></td>
-          <td class="main-weakness"><img src="icons/"/></td>
+          <td class="main-weakness"><img src="icons/" /></td>
           <td class="standard"></td>
           <td class="slash"></td>
           <td class="strike"></td>
@@ -111,23 +172,35 @@
     </table>
 
     <script>
-      const rows = document.querySelectorAll("#weaknessTable tbody tr");
+      const rows = document.querySelectorAll("tbody tr");
 
       rows.forEach((row) => {
         row.addEventListener("click", () => {
-          // Remove estilos anteriores
+          const group = row.dataset.group;
+
+          // Limpa tudo
           rows.forEach((r) => {
             r.classList.remove("highlight");
             r.classList.remove("dimmed");
           });
 
-          // Aplica highlight na linha clicada e dimmed nas outras
-          row.classList.add("highlight");
-          rows.forEach((r) => {
-            if (r !== row) {
-              r.classList.add("dimmed");
-            }
-          });
+          // Se tiver grupo, aplica em todas com o mesmo data-group
+          if (group) {
+            rows.forEach((r) => {
+              if (r.dataset.group === group) {
+                r.classList.add("highlight");
+              } else {
+                r.classList.add("dimmed");
+              }
+            });
+          } else {
+            row.classList.add("highlight");
+            rows.forEach((r) => {
+              if (r !== row) {
+                r.classList.add("dimmed");
+              }
+            });
+          }
         });
       });
     </script>

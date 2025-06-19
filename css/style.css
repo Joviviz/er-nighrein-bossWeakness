@@ -51,9 +51,9 @@
         transition: background-color 0.3s ease;
     }
 
-    tr:hover {
+    /* tr:hover {
         background-color: #3c3c3c;
-    }
+    } */
 
     .highlight {
         background-color: #4a6c8a !important;
