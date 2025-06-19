@@ -10,6 +10,33 @@
         font-weight: 600;
     }
 
+    .small {
+        font-size: 10px;
+    }
+
+    .standard,
+    .slash,
+    .strike,
+    .pierce,
+    .magic,
+    .fire,
+    .lightning,
+    .holy,
+    .poison,
+    .rot,
+    .bleed,
+    .frostbite,
+    .sleep,
+    .madness,
+    .good,
+    .bad,
+    .terrible,
+    .awsome,
+    .green {
+        font-size: 10px;
+    }
+
+
     .expedition-name,
     .boss-name {
         font-weight: 100;
