@@ -8,14 +8,16 @@
     .bad {
         background-color: rgba(255, 0, 0, 0.5);
     }
+
     .terrible {
         background-color: rgba(255, 0, 0, 0.7);
     }
-    
+
 
     .awsome {
         background-color: rgba(174, 255, 174, 0.6);
     }
+
     .good {
         background-color: rgba(116, 200, 116, 0.5);
     }
@@ -50,6 +52,18 @@
         background-color: #2c2c2c;
         transition: background-color 0.3s ease;
     }
+
+    .table-wrapper {
+        max-height: 600px;
+    }
+
+    #weaknessTable thead th {
+        position: sticky;
+        top: 0;
+        background: #222;
+        z-index: 10;
+    }
+
 
     /* tr:hover {
         background-color: #3c3c3c;

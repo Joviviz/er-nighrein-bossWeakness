@@ -8,267 +8,270 @@
   <body>
     <h1>Weakness Table - Night Lords</h1>
 
-    <table id="weaknessTable">
-      <thead>
-        <tr>
-          <th rowspan="2">Expedition</th>
-          <th rowspan="2">Night Lord</th>
-          <th rowspan="2">Weakness</th>
-          <th>Standard</th>
-          <th>Slash</th>
-          <th>Strike</th>
-          <th>Pierce</th>
-          <th>Magic</th>
-          <th>Fire</th>
-          <th>Lightning</th>
-          <th>Holy</th>
-          <th>Poison</th>
-          <th>Rot</th>
-          <th>Bleed</th>
-          <th>Frostbite</th>
-          <th>Sleep</th>
-          <th>Madness</th>
-        </tr>
-        <tr>
-          <th><img src="icons/standard.png" /></th>
-          <th><img src="icons/slash.png" /></th>
-          <th><img src="icons/strike.png" /></th>
-          <th><img src="icons/pierce.png" /></th>
-          <th><img src="icons/magic.png" /></th>
-          <th><img src="icons/fire.png" /></th>
-          <th><img src="icons/lightning.png" /></th>
-          <th><img src="icons/holy.png" /></th>
-          <th><img src="icons/poison.png" /></th>
-          <th><img src="icons/rot.png" /></th>
-          <th><img src="icons/bleed.png" /></th>
-          <th><img src="icons/frostbite.png" /></th>
-          <th><img src="icons/sleep.png" /></th>
-          <th><img src="icons/madness.png" /></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="expedition-name">Tricephalos</td>
-          <td class="boss-name">Gladius</td>
-          <td class="main-weakness"><img src="icons/holy.png" /></td>
-          <td class="standard"></td>
-          <td class="slash"></td>
-          <td class="strike"></td>
-          <td class="pierce good">+10%</td>
-          <td class="magic"></td>
-          <td class="fire terrible">-50%</td>
-          <td class="lightning"></td>
-          <td class="holy awsome">+35%</td>
-          <td class="poison bad">541</td>
-          <td class="rot good">252</td>
-          <td class="bleed good">252</td>
-          <td class="frostbite bad">541</td>
-          <td class="sleep green awsome">154</td>
-          <td class="madness terrible">Immune</td>
-        </tr>
+    <div class="table-wrapper">
+        <table id="weaknessTable">
+          <thead>
+            <tr>
+              <th rowspan="2">Expedition</th>
+              <th rowspan="2">Night Lord</th>
+              <th rowspan="2">Weakness</th>
+              <th>Standard</th>
+              <th>Slash</th>
+              <th>Strike</th>
+              <th>Pierce</th>
+              <th>Magic</th>
+              <th>Fire</th>
+              <th>Lightning</th>
+              <th>Holy</th>
+              <th>Poison</th>
+              <th>Rot</th>
+              <th>Bleed</th>
+              <th>Frostbite</th>
+              <th>Sleep</th>
+              <th>Madness</th>
+            </tr>
+            <tr>
+              <th><img src="icons/standard.png" /></th>
+              <th><img src="icons/slash.png" /></th>
+              <th><img src="icons/strike.png" /></th>
+              <th><img src="icons/pierce.png" /></th>
+              <th><img src="icons/magic.png" /></th>
+              <th><img src="icons/fire.png" /></th>
+              <th><img src="icons/lightning.png" /></th>
+              <th><img src="icons/holy.png" /></th>
+              <th><img src="icons/poison.png" /></th>
+              <th><img src="icons/rot.png" /></th>
+              <th><img src="icons/bleed.png" /></th>
+              <th><img src="icons/frostbite.png" /></th>
+              <th><img src="icons/sleep.png" /></th>
+              <th><img src="icons/madness.png" /></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="expedition-name">Tricephalos</td>
+              <td class="boss-name">Gladius</td>
+              <td class="main-weakness"><img src="icons/holy.png" /></td>
+              <td class="standard"></td>
+              <td class="slash"></td>
+              <td class="strike"></td>
+              <td class="pierce good">+10%</td>
+              <td class="magic"></td>
+              <td class="fire terrible">-50%</td>
+              <td class="lightning"></td>
+              <td class="holy awsome">+35%</td>
+              <td class="poison bad">541</td>
+              <td class="rot good">252</td>
+              <td class="bleed good">252</td>
+              <td class="frostbite bad">541</td>
+              <td class="sleep green awsome">154</td>
+              <td class="madness terrible">Immune</td>
+            </tr>
+    
+            <tr>
+              <td class="expedition-name">Gaping Jaw</td>
+              <td class="boss-name">Adel</td>
+              <td class="main-weakness"><img src="icons/poison.png" /></td>
+              <td class="standard"></td>
+              <td class="slash"></td>
+              <td class="strike"></td>
+              <td class="pierce"></td>
+              <td class="magic"></td>
+              <td class="fire bad">-20%</td>
+              <td class="lightning terrible">-50%</td>
+              <td class="holy"></td>
+              <td class="poison awsome">154</td>
+              <td class="rot awsome">154</td>
+              <td class="bleed">541</td>
+              <td class="frostbite awsome">154</td>
+              <td class="sleep awsome">154</td>
+              <td class="madness terrible">Immune</td>
+            </tr>
+    
+            <!-- Sentient Pest -->
+            <tr data-group="sentient-pest">
+              <td class="expedition-name" rowspan="2">Sentient Pest</td>
+              <td class="boss-name">Moth</td>
+              <td class="main-weakness"><img src="icons/fire.png" /></td>
+              <td class="standard good">+15%</td>
+              <td class="slash good">+25%</td>
+              <td class="strike good">+15%</td>
+              <td class="pierce good">+25%</td>
+              <td class="magic terrible">-50%</td>
+              <td class="fire awsome">+40%</td>
+              <td class="lightning bad">-10%</td>
+              <td class="holy bad">-10%</td>
+              <td class="poison">541</td>
+              <td class="rot awsome">154</td>
+              <td class="bleed awsome">154</td>
+              <td class="frostbite awsome">154</td>
+              <td class="sleep">541</td>
+              <td class="madness terrible">Immune</td>
+            </tr>
+    
+            <tr data-group="sentient-pest">
+              <!-- <td class="expedition-name"></td> -->
+              <td class="boss-name">Scorpion</td>
+              <td class="main-weakness"><img src="icons/fire.png" /></td>
+              <td class="standard bad">-10%</td>
+              <td class="slash terrible">-20%</td>
+              <td class="strike good">+20%</td>
+              <td class="pierce good">+10%</td>
+              <td class="magic bad">-10%</td>
+              <td class="fire awsome">+35%</td>
+              <td class="lightning bad">-10%</td>
+              <td class="holy bad">-10%</td>
+              <td class="poison good">252</td>
+              <td class="rot awsome">154</td>
+              <td class="bleed awsome">154</td>
+              <td class="frostbite awsome">154</td>
+              <td class="sleep awsome">154</td>
+              <td class="madness terrible">Immune</td>
+            </tr>
+    
+            <tr>
+              <td class="expedition-name">Augur</td>
+              <td class="boss-name">Maris</td>
+              <td class="main-weakness"><img src="icons/lightning.png" /></td>
+              <td class="standard"></td>
+              <td class="slash good">+15%</td>
+              <td class="strike bad">-20%</td>
+              <td class="pierce bad">-20%</td>
+              <td class="magic bad">-20%</td>
+              <td class="fire terrible">-50%</td>
+              <td class="lightning awsome">+40%</td>
+              <td class="holy bad">-15%</td>
+              <td class="poison terrible">Immune</td>
+              <td class="rot">252</td>
+              <td class="bleed terrible">Immune</td>
+              <td class="frostbite">252</td>
+              <td class="sleep terrible">Immune</td>
+              <td class="madness terrible">Immune</td>
+            </tr>
+            
+            <tr>
+              <td class="expedition-name">Equilibrious Beast</td>
+              <td class="boss-name">Libra</td>
+              <td class="main-weakness"><img src="icons/madness.png" /></td>
+              <td class="standard"></td>
+              <td class="slash good">+10%</td>
+              <td class="strike"></td>
+              <td class="pierce"></td>
+              <td class="magic bad">-20%</td>
+              <td class="fire good">+20%</td>
+              <td class="lightning"></td>
+              <td class="holy awsome">+35%</td>
+              <td class="poison awsome">154</td>
+              <td class="rot awsome">154</td>
+              <td class="bleed">252</td>
+              <td class="frostbite">252</td>
+              <td class="sleep terrible">Immune</td>
+              <td class="madness awsome">154</td>
+            </tr>
+    
+            <tr>
+              <td class="expedition-name">Darkdrift K***ht</td>
+              <td class="boss-name">Fulghor</td>
+              <td class="main-weakness"><img src="icons/lightning.png" /></td>
+              <td class="standard"></td>
+              <td class="slash"></td>
+              <td class="strike"></td>
+              <td class="pierce"></td>
+              <td class="magic"></td>
+              <td class="fire"></td>
+              <td class="lightning awsome">+20%</td>
+              <td class="holy terrible">-30%</td>
+              <td class="poison awsome">154</td>
+              <td class="rot awsome">154</td>
+              <td class="bleed awsome">154</td>
+              <td class="frostbite awsome">154</td>
+              <td class="sleep awsome">154</td>
+              <td class="madness terrible">Immune</td>
+            </tr>
+    
+            <tr>
+              <td class="expedition-name">Fissure in the Fog</td>
+              <td class="boss-name">Caligo</td>
+              <td class="main-weakness"><img src="icons/fire.png" /></td>
+              <td class="standard"></td>
+              <td class="slash bad">-15%</td>
+              <td class="strike good">+15%</td>
+              <td class="pierce bad">-10%</td>
+              <td class="magic bad">-20%</td>
+              <td class="fire awsome">+35%</td>
+              <td class="lightning bad">-20%</td>
+              <td class="holy bad">-20%</td>
+              <td class="poison">252</td>
+              <td class="rot">252</td>
+              <td class="bleed">252</td>
+              <td class="frostbite bad">541</td>
+              <td class="sleep bad">541</td>
+              <td class="madness terrible">Immune</td>
+            </tr>
+    
+            <tr data-group="nightlord">
+              <td class="expedition-name" rowspan="2">Night Aspect</td>
+              <td class="boss-name">Phase 1</td>
+              <td class="main-weakness"><img src="icons/holy.png" /></td>
+              <td class="standard"></td>
+              <td class="slash good">+15%</td>
+              <td class="strike bad">-10%</td>
+              <td class="pierce good">+10%</td>
+              <td class="magic"></td>
+              <td class="fire good">+20%</td>
+              <td class="lightning"></td>
+              <td class="holy awsome">+35%</td>
+              <td class="poison terrible">Immune</td>
+              <td class="rot">252</td>
+              <td class="bleed terrible">Immune</td>
+              <td class="frostbite terrible">Immune</td>
+              <td class="sleep bad">541</td>
+              <td class="madness terrible">Immune</td>
+            </tr>
+            <tr data-group="nightlord">
+              <!-- <td class="expedition-name"></td> -->
+              <td class="boss-name">Phase 2</td>
+              <td class="main-weakness"><img src="icons/holy.png" /></td>
+              <td class="standard"></td>
+              <td class="slash bad">-10%</td>
+              <td class="strike good">+10%</td>
+              <td class="pierce good">+15%</td>
+              <td class="magic"></td>
+              <td class="fire"></td>
+              <td class="lightning good">+20%</td>
+              <td class="holy good">+20%</td>
+              <td class="poison terrible">Immune</td>
+              <td class="rot">252</td>
+              <td class="bleed terrible">Immune</td>
+              <td class="frostbite terrible">Immune</td>
+              <td class="sleep bad">541</td>
+              <td class="madness terrible">Immune</td>
+            </tr>
+    
+            <!-- <tr>
+              <td class="expedition-name"></td>
+              <td class="boss-name"></td>
+              <td class="main-weakness"><img src="icons/" /></td>
+              <td class="standard"></td>
+              <td class="slash"></td>
+              <td class="strike"></td>
+              <td class="pierce"></td>
+              <td class="magic"></td>
+              <td class="fire"></td>
+              <td class="lightning"></td>
+              <td class="holy"></td>
+              <td class="poison"></td>
+              <td class="rot"></td>
+              <td class="bleed"></td>
+              <td class="frostbite"></td>
+              <td class="sleep"></td>
+              <td class="madness terrible">Immune</td>
+            </tr> -->
+    
+          </tbody>
+        </table>
+    </div>
 
-        <tr>
-          <td class="expedition-name">Gaping Jaw</td>
-          <td class="boss-name">Adel</td>
-          <td class="main-weakness"><img src="icons/poison.png" /></td>
-          <td class="standard"></td>
-          <td class="slash"></td>
-          <td class="strike"></td>
-          <td class="pierce"></td>
-          <td class="magic"></td>
-          <td class="fire bad">-20%</td>
-          <td class="lightning terrible">-50%</td>
-          <td class="holy"></td>
-          <td class="poison awsome">154</td>
-          <td class="rot awsome">154</td>
-          <td class="bleed">541</td>
-          <td class="frostbite awsome">154</td>
-          <td class="sleep awsome">154</td>
-          <td class="madness terrible">Immune</td>
-        </tr>
-
-        <!-- Sentient Pest -->
-        <tr data-group="sentient-pest">
-          <td class="expedition-name" rowspan="2">Sentient Pest</td>
-          <td class="boss-name">Moth</td>
-          <td class="main-weakness"><img src="icons/fire.png" /></td>
-          <td class="standard good">+15%</td>
-          <td class="slash good">+25%</td>
-          <td class="strike good">+15%</td>
-          <td class="pierce good">+25%</td>
-          <td class="magic terrible">-50%</td>
-          <td class="fire awsome">+40%</td>
-          <td class="lightning bad">-10%</td>
-          <td class="holy bad">-10%</td>
-          <td class="poison">541</td>
-          <td class="rot awsome">154</td>
-          <td class="bleed awsome">154</td>
-          <td class="frostbite awsome">154</td>
-          <td class="sleep">541</td>
-          <td class="madness terrible">Immune</td>
-        </tr>
-
-        <tr data-group="sentient-pest">
-          <!-- <td class="expedition-name"></td> -->
-          <td class="boss-name">Scorpion</td>
-          <td class="main-weakness"><img src="icons/fire.png" /></td>
-          <td class="standard bad">-10%</td>
-          <td class="slash terrible">-20%</td>
-          <td class="strike good">+20%</td>
-          <td class="pierce good">+10%</td>
-          <td class="magic bad">-10%</td>
-          <td class="fire awsome">+35%</td>
-          <td class="lightning bad">-10%</td>
-          <td class="holy bad">-10%</td>
-          <td class="poison good">252</td>
-          <td class="rot awsome">154</td>
-          <td class="bleed awsome">154</td>
-          <td class="frostbite awsome">154</td>
-          <td class="sleep awsome">154</td>
-          <td class="madness terrible">Immune</td>
-        </tr>
-
-        <tr>
-          <td class="expedition-name">Augur</td>
-          <td class="boss-name">Maris</td>
-          <td class="main-weakness"><img src="icons/lightning.png" /></td>
-          <td class="standard"></td>
-          <td class="slash good">+15%</td>
-          <td class="strike bad">-20%</td>
-          <td class="pierce bad">-20%</td>
-          <td class="magic bad">-20%</td>
-          <td class="fire terrible">-50%</td>
-          <td class="lightning awsome">+40%</td>
-          <td class="holy bad">-15%</td>
-          <td class="poison terrible">Immune</td>
-          <td class="rot">252</td>
-          <td class="bleed terrible">Immune</td>
-          <td class="frostbite">252</td>
-          <td class="sleep terrible">Immune</td>
-          <td class="madness terrible">Immune</td>
-        </tr>
-        
-        <tr>
-          <td class="expedition-name">Equilibrious Beast</td>
-          <td class="boss-name">Libra</td>
-          <td class="main-weakness"><img src="icons/madness.png" /></td>
-          <td class="standard"></td>
-          <td class="slash good">+10%</td>
-          <td class="strike"></td>
-          <td class="pierce"></td>
-          <td class="magic bad">-20%</td>
-          <td class="fire good">+20%</td>
-          <td class="lightning"></td>
-          <td class="holy awsome">+35%</td>
-          <td class="poison awsome">154</td>
-          <td class="rot awsome">154</td>
-          <td class="bleed">252</td>
-          <td class="frostbite">252</td>
-          <td class="sleep terrible">Immune</td>
-          <td class="madness awsome">154</td>
-        </tr>
-
-        <tr>
-          <td class="expedition-name">Darkdrift K***ht</td>
-          <td class="boss-name">Fulghor</td>
-          <td class="main-weakness"><img src="icons/lightning.png" /></td>
-          <td class="standard"></td>
-          <td class="slash"></td>
-          <td class="strike"></td>
-          <td class="pierce"></td>
-          <td class="magic"></td>
-          <td class="fire"></td>
-          <td class="lightning awsome">+20%</td>
-          <td class="holy terrible">-30%</td>
-          <td class="poison awsome">154</td>
-          <td class="rot awsome">154</td>
-          <td class="bleed awsome">154</td>
-          <td class="frostbite awsome">154</td>
-          <td class="sleep awsome">154</td>
-          <td class="madness terrible">Immune</td>
-        </tr>
-
-        <tr>
-          <td class="expedition-name">Fissure in the Fog</td>
-          <td class="boss-name">Caligo</td>
-          <td class="main-weakness"><img src="icons/fire.png" /></td>
-          <td class="standard"></td>
-          <td class="slash bad">-15%</td>
-          <td class="strike good">+15%</td>
-          <td class="pierce bad">-10%</td>
-          <td class="magic bad">-20%</td>
-          <td class="fire awsome">+35%</td>
-          <td class="lightning bad">-20%</td>
-          <td class="holy bad">-20%</td>
-          <td class="poison">252</td>
-          <td class="rot">252</td>
-          <td class="bleed">252</td>
-          <td class="frostbite bad">541</td>
-          <td class="sleep bad">541</td>
-          <td class="madness terrible">Immune</td>
-        </tr>
-
-        <tr data-group="nightlord">
-          <td class="expedition-name" rowspan="2">Night Aspect</td>
-          <td class="boss-name">Phase 1</td>
-          <td class="main-weakness"><img src="icons/holy.png" /></td>
-          <td class="standard"></td>
-          <td class="slash good">+15%</td>
-          <td class="strike bad">-10%</td>
-          <td class="pierce good">+10%</td>
-          <td class="magic"></td>
-          <td class="fire good">+20%</td>
-          <td class="lightning"></td>
-          <td class="holy awsome">+35%</td>
-          <td class="poison terrible">Immune</td>
-          <td class="rot">252</td>
-          <td class="bleed terrible">Immune</td>
-          <td class="frostbite terrible">Immune</td>
-          <td class="sleep bad">541</td>
-          <td class="madness terrible">Immune</td>
-        </tr>
-        <tr data-group="nightlord">
-          <!-- <td class="expedition-name"></td> -->
-          <td class="boss-name">Phase 2</td>
-          <td class="main-weakness"><img src="icons/holy.png" /></td>
-          <td class="standard"></td>
-          <td class="slash bad">-10%</td>
-          <td class="strike good">+10%</td>
-          <td class="pierce good">+15%</td>
-          <td class="magic"></td>
-          <td class="fire"></td>
-          <td class="lightning good">+20%</td>
-          <td class="holy good">+20%</td>
-          <td class="poison terrible">Immune</td>
-          <td class="rot">252</td>
-          <td class="bleed terrible">Immune</td>
-          <td class="frostbite terrible">Immune</td>
-          <td class="sleep bad">541</td>
-          <td class="madness terrible">Immune</td>
-        </tr>
-
-        <!-- <tr>
-          <td class="expedition-name"></td>
-          <td class="boss-name"></td>
-          <td class="main-weakness"><img src="icons/" /></td>
-          <td class="standard"></td>
-          <td class="slash"></td>
-          <td class="strike"></td>
-          <td class="pierce"></td>
-          <td class="magic"></td>
-          <td class="fire"></td>
-          <td class="lightning"></td>
-          <td class="holy"></td>
-          <td class="poison"></td>
-          <td class="rot"></td>
-          <td class="bleed"></td>
-          <td class="frostbite"></td>
-          <td class="sleep"></td>
-          <td class="madness terrible">Immune</td>
-        </tr> -->
-
-      </tbody>
-    </table>
 
     <script>
       const rows = document.querySelectorAll("tbody tr");
