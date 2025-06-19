@@ -27,12 +27,7 @@
     .bleed,
     .frostbite,
     .sleep,
-    .madness,
-    .good,
-    .bad,
-    .terrible,
-    .awsome,
-    .green {
+    .madness {
         font-size: 10px;
     }
 
