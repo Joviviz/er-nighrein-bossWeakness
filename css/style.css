@@ -5,21 +5,38 @@
         padding: 20px;
     }
 
+
+    tbody tr td {
+        font-weight: 900;
+    }
+
+    .expedition-name,
+    .boss-name {
+        font-weight: 100;
+    }
+
     .bad {
-        background-color: rgba(255, 0, 0, 0.5);
+        background-color: #F0AD4E;
+        color: #1a0f00;
+        text-shadow: 1px 1px 0px #ffffff;
     }
 
     .terrible {
-        background-color: rgba(255, 0, 0, 0.7);
+        background-color: #D9534f;
+        color: #ffffff;
+        text-shadow: 1px 1px 0px #000000;
     }
 
 
     .awsome {
-        background-color: rgba(174, 255, 174, 0.6);
+        background-color: #6fcf97;
+        color: #004232;
+        text-shadow: 1px 1px 0px #ffffff;
     }
 
     .good {
-        background-color: rgba(116, 200, 116, 0.5);
+        background-color: #007f5f;
+        text-shadow: 1px 1px 0px #000000;
     }
 
     table img {

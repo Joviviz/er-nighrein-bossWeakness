@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Nighrein Weakness Table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -101,11 +102,11 @@
               <td class="fire awsome">+40%</td>
               <td class="lightning bad">-10%</td>
               <td class="holy bad">-10%</td>
-              <td class="poison">541</td>
+              <td class="poison bad">541</td>
               <td class="rot awsome">154</td>
               <td class="bleed awsome">154</td>
               <td class="frostbite awsome">154</td>
-              <td class="sleep">541</td>
+              <td class="sleep bad">541</td>
               <td class="madness terrible">Immune</td>
             </tr>
     
@@ -280,13 +281,11 @@
         row.addEventListener("click", () => {
           const group = row.dataset.group;
 
-          // Limpa tudo
           rows.forEach((r) => {
             r.classList.remove("highlight");
             r.classList.remove("dimmed");
           });
 
-          // Se tiver grupo, aplica em todas com o mesmo data-group
           if (group) {
             rows.forEach((r) => {
               if (r.dataset.group === group) {
